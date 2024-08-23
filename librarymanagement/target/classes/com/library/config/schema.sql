@@ -12,7 +12,8 @@ CREATE TABLE books (
     title VARCHAR(255) NOT NULL,
     author VARCHAR(255) NOT NULL,
     isbn VARCHAR(20) UNIQUE NOT NULL,
-    available BOOLEAN DEFAULT TRUE
+    available BOOLEAN DEFAULT TRUE,
+    approved BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE borrow_records (
